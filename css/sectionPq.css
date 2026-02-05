@@ -1,0 +1,181 @@
+#pq {
+    overflow: hidden;
+    position: relative;
+}
+
+#pq header h3 {
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+}
+
+#pq header p {
+    margin-bottom: 0;
+}
+
+#pq header p.um {
+    font-size: 1.6rem;
+    margin-bottom: 1rem;
+}
+
+#pq .cards {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+
+    margin-block: 3rem;
+}
+
+#pq .card {
+    padding: 2rem;
+    border-radius: .5rem; 
+
+    display: flex;
+    gap: 1rem; 
+    align-items: center;
+    text-align: left;
+    width: 100%;
+
+    /* From https://css.glass */
+    background: rgba(1, 23, 31, 0.62);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(29, 79, 97, 0.3);
+    box-shadow: 0 0 8px #41a5cd46;
+}
+
+#pq .card h3 {
+    color: #b4c0c5;
+    font-size: 1.4rem;
+    font-weight: 400;
+}
+
+#pq .card ion-icon {
+    min-width: .8rem;
+    min-height: .8rem;
+    max-width: .8rem;
+    max-height: .8rem;
+
+    color: var(--secondary-color);
+}
+
+#pq .boxes {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+}
+
+#pq .box {
+    width: 100%;
+    /* From https://css.glass */
+    background: rgba(1, 23, 31, 0.62);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(29, 79, 97, 0.3);
+    box-shadow: 0 0 8px #41a5cd46;
+
+    padding: 1.5rem;
+
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    text-align: left;
+}
+
+#pq .box img {
+    width: 5rem;
+    box-shadow: 0 0 18px #41a5cd46;
+}
+
+#pq .box .head {
+    width: 100%;
+
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+
+    position: relative;
+    margin-bottom: 3rem;
+}
+
+#pq .box .head::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    left: 0;
+    bottom: -1.5rem;
+    background: rgba(29, 79, 97, 0.3);
+    box-shadow: 0 0 8px #41a5cd46;
+}
+
+#pq .box .head h3 {
+    color: #fff;
+    text-align: left;
+    font-size: 1.6rem;
+}
+
+#pq .box .topics {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 1rem;
+
+    padding-block: 1rem;
+}
+
+#pq .box .topic {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+
+#pq .box .topic p {
+    color: #b4c0c5;
+    font-size: 1.3rem;
+}
+
+#pq .box .topic p span {
+    font-size: 1rem;
+}
+
+#pq .box .topic ion-icon {
+    color: #b4c0c5;
+}
+
+#pq a button {
+    margin-top: 4rem;
+}
+
+@media (min-width: 1080px) {
+    section#pq .cards {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    section#pq .card {
+        height: 100%;
+        justify-content: center;
+        background: rgba(219, 245, 255, 0.84);
+    }
+
+    section#pq .card ion-icon {
+        color: #000;
+    }
+
+    section#pq .card h3 {
+        color: #000;
+    }
+
+    section#pq .boxes {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+}

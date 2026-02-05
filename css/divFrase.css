@@ -1,0 +1,28 @@
+#frase {
+    background: var(--gradient);
+    box-shadow: 0 0 38px #41a5cd94;
+    padding: 3rem;
+}
+
+#frase header {
+    margin-bottom: 0;
+}
+
+#frase header h2 {
+    font-weight: 400;
+    color: #ffffff;
+
+    margin-bottom: 0;
+}
+
+#frase header h2 span {
+    font-weight: 700;
+    color: #ffffff;
+}
+
+@media (min-width: 1080px) {
+    div#frase header {
+        padding: 2rem;
+        margin-bottom: 0;
+    }
+}

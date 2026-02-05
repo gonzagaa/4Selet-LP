@@ -1,0 +1,76 @@
+a { 
+    width: 100%;
+    text-decoration: none;
+}
+
+button {
+    width: 100%;
+    padding: 2.5rem 2rem;
+    font-size: 1.6rem;
+    border-radius: 4rem;
+
+    border: none;
+    font-weight: 500;
+    transition: all 300ms ease-in-out;
+
+    background: linear-gradient(45deg, #2BFF88, #067A44);
+
+    color: #fefefe;
+
+    position: relative;
+
+    box-shadow: 0 0px 30px #2bff875d;
+}
+
+  
+button:hover {
+    filter: brightness(1.1);
+    cursor: pointer;
+    box-shadow: 0 0px 30px #2bff878d;
+}
+
+#buttonWhatsapp {
+    display: none;
+    background: #25d366;
+    color: #Fff;
+    border-radius: 50%;
+    padding: .5rem;
+    font-size: 3rem;
+    width: 7rem;
+    height: 7rem;
+    align-items: center;
+    justify-content: center;
+
+    animation: whatsapp 3s ease-in-out;
+    transition: all 300ms ease-in-out;
+}
+
+#buttonWhatsapp:hover {
+    filter: brightness(1.1);
+}
+
+#buttonWhatsapp ion-icon {
+    line-height: 0;
+}
+
+@media (min-width: 1080px) {
+    a {
+        width: initial;
+    }
+
+    button {
+        font-size: 2rem;
+        width: initial;
+        padding: 2.5rem 4.5rem;
+    }
+
+    #buttonWhatsapp {
+        display: flex;
+    }
+}
+
+@keyframes whatsapp {
+    50% {
+        transform: rotate(10deg);
+    }
+}

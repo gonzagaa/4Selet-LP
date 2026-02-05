@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../assets/Avatar (4Selet) 2.avif" type="image/x-icon">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+
+    <!-- Primary Meta Tags -->
+    <title>4Selet - Cadastro</title>
+
+
+    <meta name="Author" content="Gustavo Gonzaga">
+    <meta name="robots" content="index, follow" />
+
+    <link rel="stylesheet" href="https://unpkg.com/lenis@1.1.14/dist/lenis.css" />
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="../css/index.css?v=4">
+
+</head>
+<body id="body" class="smooth-scroll-wrapper">
+    <header class="header obrigado" id="home">
+        <img class="bg desktop" src="../assets/bg desktop.avif" alt="">
+        <img class="bg mobile" src="../assets/bg mobile.avif" alt="">
+
+        <div class="blush um"></div>
+        <div class="blush dois"></div>
+
+        <div class="wrapper">
+            <div class="content">
+                <div class="text">
+                    <h1><span>Cadastrado com sucesso!</span> <br>Confira sua caixa de e-mail para acessar a plataforma que vai elevar o nível do seu negócio!</h1>
+
+                    <p>Precisa de ajuda? <br>suporte@4selet.combr</p>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section id="author">
+        <div class="wrapper">
+            <div class="content">
+                <p>© 2026 4Selet - Todos os Direitos Reservados</p>
+
+                <a target="_blank" href="https://instagram.com/lsbdigital">
+                    <p class="author">
+                        CNPJ: 45.024.688/0001-88
+                    </p>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const overlay = document.getElementById("portal-overlay");
+
+    if (!overlay) return;
+
+    // trava o scroll enquanto o portal está na tela
+    document.body.classList.add("portal-lock");
+
+    // tempo total da animação (ms) = delay (0.2) + duração (0.7) + fade (0.9 sobreposto)
+    const totalTime = 1200;
+
+    setTimeout(() => {
+      overlay.style.display = "none";
+      document.body.classList.remove("portal-lock");
+    }, totalTime);
+  });
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init(
+            {
+                duration: 1500,
+            }
+        );
+    </script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script src="../script.js?v=4"></script>
+
+    <script src="https://unpkg.com/lenis@1.1.14/dist/lenis.min.js"></script>
+  
+    <script>
+(function () {
+  const map = {
+    "rd-select_field-mk4haweg": "Qual o seu faturamento atual com produtos digitais?",
+    "rd-select_field-mk4haweh": "Qual seu nível de atuação?",
+    "rd-select_field-mk4hawem": "Como conheceu a 4Selet?"
+  };
+
+  function updateOne(id, text) {
+    const select = document.getElementById(id);
+    if (!select) return false;
+
+    // pega a primeira opção vazia (placeholder)
+    let opt = select.querySelector('option[value=""]');
+    if (!opt) {
+      opt = document.createElement("option");
+      opt.value = "";
+      select.insertBefore(opt, select.firstChild);
+    }
+
+    opt.textContent = text;
+
+    // IMPORTANTÍSSIMO: não “esconde” nem “desabilita” pra não bugar o Select2/RD
+    // (deixa como o RD já faz)
+    // opt.hidden = true;
+    // opt.disabled = true;
+
+    return true;
+  }
+
+  function applyAll() {
+    let done = 0;
+    Object.entries(map).forEach(([id, text]) => {
+      if (updateOne(id, text)) done++;
+    });
+    return done === Object.keys(map).length;
+  }
+
+  // tenta várias vezes porque o RD injeta o form depois
+  let tries = 0;
+  const timer = setInterval(() => {
+    tries++;
+    if (applyAll() || tries >= 60) { // ~6s
+      clearInterval(timer);
+    }
+  }, 100);
+})();
+</script>
+
+</body>
+
+</html>

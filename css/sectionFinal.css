@@ -1,0 +1,67 @@
+#final {
+    overflow: hidden;
+    position: relative;
+}
+
+#final .cards {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+#final .card {
+    padding: 2rem;
+    border-radius: .5rem; 
+
+    display: flex;
+    gap: 1rem; 
+    align-items: center;
+    text-align: left;
+    width: 100%;
+
+    /* From https://css.glass */
+    background: var(--gradient);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(29, 79, 97, 0.3);
+    box-shadow: 0 0 8px #41a5cd46;
+}
+
+#final .card h3 {
+    color: #ffffff;
+    font-size: 1.4rem;
+    font-weight: 600;
+}
+
+#final .card ion-icon {
+    min-width: 2rem;
+    min-height: 2rem;
+    max-width: 2rem;
+    max-height: 2rem;
+
+    color: #fff;
+}
+
+#final a button {
+    margin-top: 3rem;
+}
+
+@media (min-width: 1080px) {
+    section#final header p {
+        font-size: 2rem;
+        margin-bottom: 0;
+    }
+
+    section#final .cards {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+
+    section#final .card {
+        justify-content: center;
+        height: 100%;
+    }
+}

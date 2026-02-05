@@ -1,0 +1,103 @@
+/* trava scroll enquanto o portal está ativo */
+body.portal-lock {
+  overflow: hidden;
+}
+
+/* overlay que cobre a tela toda */
+.portal-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 9999;
+  background: #0f0f0f00;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  pointer-events: none; /* não trava clique depois */
+  opacity: 1;
+  animation: portalOverlayFadeOut 0.9s ease-out 0.7s forwards;
+}
+
+/* metades do portal */
+.portal-half {
+  position: absolute;
+  width: 100%;
+  height: 50%;
+  left: 0;
+  background: #0F0F0F;
+}
+
+/* metade de cima */
+.portal-half--top {
+  top: 0;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.25);
+  animation: portalTopMove 0.7s ease-in-out 0.2s forwards;
+}
+
+/* metade de baixo */
+.portal-half--bottom {
+  bottom: 0;
+  border-top: 1px solid rgba(0, 0, 0, 0.25);
+  animation: portalBottomMove 0.7s ease-in-out 0.2s forwards;
+}
+
+/* brilho no centro (efeito portal) */
+.portal-glow {
+    display: none;
+  position: absolute;
+  width: 60%;
+  height: 40%;
+  border-radius: 50%;
+  
+  filter: blur(12px);
+  opacity: 0;
+  animation: portalGlowPulse 0.7s ease-out 0.2s forwards;
+}
+
+/* animações */
+@keyframes portalTopMove {
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(-100%);
+  }
+}
+
+@keyframes portalBottomMove {
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(100%);
+  }
+}
+
+@keyframes portalGlowPulse {
+  0% {
+    opacity: 0;
+    transform: scaleY(0.4);
+  }
+  40% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    transform: scaleY(1.1);
+  }
+}
+
+@keyframes portalOverlayFadeOut {
+  to {
+    opacity: 0;
+  }
+}
+
+/* respeitar quem usa redução de movimento no sistema */
+@media (prefers-reduced-motion: reduce) {
+  .portal-overlay,
+  .portal-half,
+  .portal-glow {
+    animation: none !important;
+    opacity: 0;
+  }
+}

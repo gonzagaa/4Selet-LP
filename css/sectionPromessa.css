@@ -1,0 +1,87 @@
+#promessa {
+    overflow: hidden;
+    position: relative;
+}
+
+#promessa .cards {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+
+    margin-block: 2rem;
+}
+
+#promessa .card {
+    width: 100%;
+    padding: 1.5rem;
+    background: linear-gradient(45deg, #010F14, #021b24);
+    border: 1px solid rgba(29, 79, 97, 0.3);
+    box-shadow: 0 0 8px #41a5cd46;
+
+    text-align: left;
+
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+#promessa .card img {
+    width: 4rem;
+    box-shadow: 0 0 18px #41a5cd46;
+}
+
+#promessa .card h3 {
+    color: #fff;
+    font-size: 1.4rem;
+    font-weight: 400;
+}
+
+#promessa .card h3 span {
+    font-size: 1.8rem;
+    color: var(--secondary-color);
+    text-shadow: 0 0 18px #41a5cd;
+}
+
+#promessa .card p {
+    font-size: 1.6rem;
+    font-weight: 200;
+    color: #b4c0c5;
+}
+
+#promessa header h3 {
+    margin-block: 1rem;
+}
+
+#promessa header p {
+    margin-bottom: 0;
+}
+
+#promessa header p.dois {
+    color: #fff;
+    font-size: 1.7rem;
+    font-weight: 600;
+}
+
+
+@media (min-width: 1080px) {
+    section#promessa .cards {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        margin-bottom: 4rem;
+    }
+
+    section#promessa .card {
+        height: 100%;
+    }
+
+    section#promessa header p {
+        font-size: 2rem;
+    }
+
+    section#promessa header p.um {
+        font-size: 1.6rem;
+        margin-top: .5rem;
+    }
+}

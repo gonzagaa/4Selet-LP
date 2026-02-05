@@ -1,0 +1,101 @@
+#estrutura {
+    overflow: hidden;
+    position: relative;
+}
+
+#estrutura header h3 {
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+}
+
+#estrutura header p {
+    margin-bottom: 0;
+}
+
+#estrutura header p.um {
+    font-size: 1.6rem;
+    margin-bottom: 1rem;
+}
+
+#estrutura .topics {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+
+    margin-block: 2rem;
+}
+
+#estrutura .topic {
+    background: rgba(219, 245, 255, 0.84);
+    border-radius: .5rem;
+
+    padding: 1.5rem;
+
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    align-items: start;
+    text-align: left;
+    width: 100%;
+}
+
+#estrutura .topic ion-icon {
+    color: #000;
+    font-size: 2rem;
+}
+
+#estrutura .topic p {
+    color: #000;
+    font-size: 1.3rem;
+    font-weight: 500;
+    margin-bottom: 0;
+}
+
+#estrutura h4 {
+    margin-top: 2rem;
+    color: #b4c0c5;
+    font-size: 1.6rem;
+}
+
+@media (min-width: 1080px) {
+    section#estrutura .content {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 8rem;
+    }
+
+    section#estrutura header {
+        text-align: left;
+        align-items: start;
+        margin-bottom: 0;
+    }
+
+    section#estrutura .content .box {
+        background: rgba(1, 23, 31, 0.62);
+        border-radius: 16px;
+        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+        backdrop-filter: blur(5px);
+        -webkit-backdrop-filter: blur(5px);
+        border: 1px solid rgba(29, 79, 97, 0.3);
+        box-shadow: 0 0 8px #41a5cd46;
+        padding: 2rem;
+    }
+
+    section#estrutura .content .topics {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+     section#estrutura .content .topic {
+        height: 100%;
+        justify-content: center;
+        align-items: center;
+     }
+
+     section#estrutura .content .topic:nth-child(3) p {
+        font-size: 1.3rem;
+     }
+}
+

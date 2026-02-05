@@ -1,0 +1,31 @@
+#vsl {
+    overflow: hidden;
+    position: relative;
+
+    padding-top: 10rem;
+}
+
+#vsl img {
+    width: 100%;
+}
+
+#vsl .video {
+    padding-inline: 10%;
+}
+
+@media (min-width: 1080px) {
+    section#vsl {
+        padding-top: 14rem;
+    }
+
+    section#vsl .content {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+
+        padding-inline: 15%;
+    }
+
+    section#vsl .content .video {
+        padding-left: 20%;
+    }
+}

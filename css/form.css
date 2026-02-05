@@ -1,0 +1,325 @@
+/* =========================================================
+   RD STATION - FORÇAR BACKGROUND TRANSPARENTE (OVERRIDE)
+   Container do seu form: #lp-4selet-aa3a79de3f40ab3f27ff
+   ========================================================= */
+
+#lp-4selet-aa3a79de3f40ab3f27ff,
+#lp-4selet-aa3a79de3f40ab3f27ff * {
+  background: transparent !important;
+  background-color: transparent !important;
+  background-image: none !important;
+}
+
+/* Seções/linhas/colunas do bricks */
+#lp-4selet-aa3a79de3f40ab3f27ff section,
+#lp-4selet-aa3a79de3f40ab3f27ff section[id^="rd-section-"],
+#lp-4selet-aa3a79de3f40ab3f27ff div[id^="rd-row-"],
+#lp-4selet-aa3a79de3f40ab3f27ff div[id^="rd-column-"],
+#lp-4selet-aa3a79de3f40ab3f27ff div.bricks--section,
+#lp-4selet-aa3a79de3f40ab3f27ff div.bricks--row,
+#lp-4selet-aa3a79de3f40ab3f27ff div.bricks--column,
+#lp-4selet-aa3a79de3f40ab3f27ff .bricks--component,
+#lp-4selet-aa3a79de3f40ab3f27ff .bricks--component-embeddable-form {
+  background: transparent !important;
+  background-color: transparent !important;
+}
+
+/* Wrapper do form */
+#lp-4selet-aa3a79de3f40ab3f27ff #rd-form-mk4gs8hd,
+#lp-4selet-aa3a79de3f40ab3f27ff #rd-form-mk4gs8hd .bricks-form,
+#lp-4selet-aa3a79de3f40ab3f27ff #rd-form-mk4gs8hd .bricks-form__fieldset,
+#lp-4selet-aa3a79de3f40ab3f27ff #rd-form-mk4gs8hd .bricks-form__field,
+#lp-4selet-aa3a79de3f40ab3f27ff #rd-form-mk4gs8hd .bricks-form__submit {
+  background: transparent !important;
+  background-color: transparent !important;
+}
+
+/* Inputs e selects: mantém fundo transparente (se você quiser branco, me fala) */
+#lp-4selet-aa3a79de3f40ab3f27ff #rd-form-mk4gs8hd input,
+#lp-4selet-aa3a79de3f40ab3f27ff #rd-form-mk4gs8hd select,
+#lp-4selet-aa3a79de3f40ab3f27ff #rd-form-mk4gs8hd textarea {
+  background: transparent !important;
+  background-color: transparent !important;
+}
+
+/* Select2 (telefone / país) */
+#lp-4selet-aa3a79de3f40ab3f27ff #rd-form-mk4gs8hd .select2-container,
+#lp-4selet-aa3a79de3f40ab3f27ff #rd-form-mk4gs8hd .select2-choice,
+#lp-4selet-aa3a79de3f40ab3f27ff #rd-form-mk4gs8hd .select2-drop,
+#lp-4selet-aa3a79de3f40ab3f27ff #rd-form-mk4gs8hd .select2-results,
+#lp-4selet-aa3a79de3f40ab3f27ff #rd-form-mk4gs8hd .select2-search,
+#lp-4selet-aa3a79de3f40ab3f27ff #rd-form-mk4gs8hd .select2-input {
+  background: transparent !important;
+  background-color: transparent !important;
+  background-image: none !important;
+}
+
+/* Botão: se você quiser manter cor dele, comente esse bloco */
+#lp-4selet-aa3a79de3f40ab3f27ff #rd-button-mk4gs8hg,
+#lp-4selet-aa3a79de3f40ab3f27ff button#rd-button-mk4gs8hg,
+#lp-4selet-aa3a79de3f40ab3f27ff .rd-button {
+  background: transparent !important;
+  background-color: transparent !important;
+}
+
+/* Qualquer coisa inline com style="background..." dentro do container */
+#lp-4selet-aa3a79de3f40ab3f27ff [style*="background"],
+#lp-4selet-aa3a79de3f40ab3f27ff [style*="background-color"],
+#lp-4selet-aa3a79de3f40ab3f27ff [style*="background-image"] {
+  background: transparent !important;
+  background-color: transparent !important;
+  background-image: none !important;
+}
+
+/* Evita “caixa branca” por sombra */
+#lp-4selet-aa3a79de3f40ab3f27ff * {
+  box-shadow: none !important;
+}
+
+/* =========================================================*/
+
+/* =========================================================
+   RD FORM - VISUAL BONITO (SEM QUEBRAR O BG TRANSPARENTE)
+   Cor base: #006494
+   Container: #lp-4selet-aa3a79de3f40ab3f27ff
+   ========================================================= */
+
+#lp-4selet-aa3a79de3f40ab3f27ff #rd-form-mk4gs8hd form#conversion-form-lp-4selet {
+  width: 100% !important;
+}
+
+/* Espaçamento geral dos campos */
+#lp-4selet-aa3a79de3f40ab3f27ff #rd-form-mk4gs8hd .bricks-form__field {
+  margin-bottom: 14px !important;
+}
+
+/* INPUTS / SELECT / TEXTAREA */
+#lp-4selet-aa3a79de3f40ab3f27ff #rd-form-mk4gs8hd input.bricks-form__input,
+#lp-4selet-aa3a79de3f40ab3f27ff #rd-form-mk4gs8hd select.bricks-form__input,
+#lp-4selet-aa3a79de3f40ab3f27ff #rd-form-mk4gs8hd textarea.bricks-form__input {
+  background: #010F14 !important;
+  background-color: #010F14 !important;
+  color: #ffffff !important;
+
+  padding: 1.5rem !important;
+  border-radius: 5px !important;
+
+  border: 1px solid rgba(255, 255, 255, 0.14) !important;
+  box-shadow: 0 1px 0 rgba(0,0,0,0.03) !important;
+
+  font-size: 16px !important;
+
+  transition: border-color .15s ease, box-shadow .15s ease, outline-color .15s ease !important;
+}
+
+/* Altura consistente (inputs e selects) */
+#lp-4selet-aa3a79de3f40ab3f27ff #rd-form-mk4gs8hd input.bricks-form__input:not(textarea),
+#lp-4selet-aa3a79de3f40ab3f27ff #rd-form-mk4gs8hd select.bricks-form__input {
+  height: auto !important;
+}
+
+/* Placeholder preto “mais suave” */
+#lp-4selet-aa3a79de3f40ab3f27ff #rd-form-mk4gs8hd input.bricks-form__input::placeholder,
+#lp-4selet-aa3a79de3f40ab3f27ff #rd-form-mk4gs8hd textarea.bricks-form__input::placeholder {
+  color: rgba(244, 244, 244, 0.55) !important;
+}
+
+/* Quando focado/selecionado: outline simples azul */
+#lp-4selet-aa3a79de3f40ab3f27ff #rd-form-mk4gs8hd input.bricks-form__input:focus,
+#lp-4selet-aa3a79de3f40ab3f27ff #rd-form-mk4gs8hd select.bricks-form__input:focus,
+#lp-4selet-aa3a79de3f40ab3f27ff #rd-form-mk4gs8hd textarea.bricks-form__input:focus {
+  outline: 2px solid #006494 !important;
+  outline-offset: 2px !important;
+  border-color: #006494 !important;
+  box-shadow: 0 0 0 3px rgba(0, 100, 148, 0.18) !important;
+}
+
+/* Remove sombras estranhas do navegador (se tiver) */
+#lp-4selet-aa3a79de3f40ab3f27ff #rd-form-mk4gs8hd input.bricks-form__input:focus-visible,
+#lp-4selet-aa3a79de3f40ab3f27ff #rd-form-mk4gs8hd select.bricks-form__input:focus-visible,
+#lp-4selet-aa3a79de3f40ab3f27ff #rd-form-mk4gs8hd textarea.bricks-form__input:focus-visible {
+  outline: 2px solid #006494 !important;
+}
+
+/* Mensagens de erro mais limpas */
+#lp-4selet-aa3a79de3f40ab3f27ff #rd-form-mk4gs8hd label.error {
+  color: #000000 !important;
+  background: #ffffff !important;
+  display: inline-block !important;
+  margin-top: 6px !important;
+  padding: 6px 10px !important;
+  border-radius: 10px !important;
+  border: 1px solid rgba(0,0,0,0.12) !important;
+  font-size: 12px !important;
+}
+
+/* Botão bonito na identidade */
+#lp-4selet-aa3a79de3f40ab3f27ff #rd-button-mk4gs8hg,
+#lp-4selet-aa3a79de3f40ab3f27ff button#rd-button-mk4gs8hg {
+  background: #006494 !important;
+  background-color: #006494 !important;
+  color: #ffffff !important;
+
+  border: 1px solid rgba(0,0,0,0.12) !important;
+  border-radius: 14px !important;
+
+  padding: 16px 18px !important;
+  min-height: 58px !important;
+
+  font-family: Montserrat, Arial, Helvetica, sans-serif !important;
+  font-size: 18px !important;
+  font-weight: 700 !important;
+  letter-spacing: 0.2px !important;
+
+  box-shadow: 0 10px 22px rgba(0, 100, 148, 0.22) !important;
+  transition: transform .12s ease, box-shadow .12s ease, filter .12s ease !important;
+}
+
+/* Hover/active no botão (sem fugir do azul) */
+#lp-4selet-aa3a79de3f40ab3f27ff #rd-button-mk4gs8hg:hover,
+#lp-4selet-aa3a79de3f40ab3f27ff button#rd-button-mk4gs8hg:hover {
+  filter: brightness(0.95) !important;
+  box-shadow: 0 12px 26px rgba(0, 100, 148, 0.28) !important;
+  transform: translateY(-1px) !important;
+}
+
+#lp-4selet-aa3a79de3f40ab3f27ff #rd-button-mk4gs8hg:active,
+#lp-4selet-aa3a79de3f40ab3f27ff button#rd-button-mk4gs8hg:active {
+  transform: translateY(0px) !important;
+  box-shadow: 0 8px 18px rgba(0, 100, 148, 0.22) !important;
+}
+
+/* Select2 do telefone: deixa branco e alinhado com os inputs */
+#lp-4selet-aa3a79de3f40ab3f27ff #rd-form-mk4gs8hd .with-select-flags .select2-container .select2-choice {
+  background: #010F14 !important;
+  background-color: #010F14 !important;
+  color: #ffffff !important;
+
+  border-radius: 12px 0 0 12px !important;
+  border: 1px solid rgba(0,0,0,0.14) !important;
+  height: 56px !important;
+  line-height: 56px !important;
+
+  box-shadow: 0 1px 0 rgba(0,0,0,0.03) !important;
+}
+
+#lp-4selet-aa3a79de3f40ab3f27ff #rd-form-mk4gs8hd .with-select-flags .phone-input-group > .phone {
+  border-radius: 0 12px 12px 0 !important;
+}
+
+/* Foco no grupo do telefone: outline azul também */
+#lp-4selet-aa3a79de3f40ab3f27ff #rd-form-mk4gs8hd .with-select-flags .phone-input-group:focus-within .select2-choice,
+#lp-4selet-aa3a79de3f40ab3f27ff #rd-form-mk4gs8hd .with-select-flags .phone-input-group:focus-within .phone {
+  outline: 2px solid #006494 !important;
+  outline-offset: 2px !important;
+  border-color: #006494 !important;
+}
+
+@media (min-width: 1080px) {
+  /* transforma o fieldset em grid */
+  #lp-4selet-aa3a79de3f40ab3f27ff
+  #rd-form-mk4gs8hd
+  .bricks-form__fieldset {
+    display: grid !important;
+    grid-template-columns: 1fr 1fr !important;
+    gap: 14px 16px !important; /* linha / coluna */
+    align-items: start !important;
+  }
+
+  /* cada field vira “bloco” do grid */
+  #lp-4selet-aa3a79de3f40ab3f27ff
+  #rd-form-mk4gs8hd
+  .bricks-form__field {
+    margin: 0 !important;       /* o gap já cuida */
+    width: auto !important;
+  }
+
+  /* deixa o telefone (com bandeira) ocupando a linha inteira (fica bem mais bonito) */
+  #lp-4selet-aa3a79de3f40ab3f27ff
+  #rd-form-mk4gs8hd
+  .bricks-form__field.with-select-flags {
+    grid-column: 1 / -1 !important;
+  }
+
+  /* BOTÃO ocupando as 2 colunas */
+  #lp-4selet-aa3a79de3f40ab3f27ff
+  #rd-form-mk4gs8hd
+  .bricks-form__submit {
+    grid-column: 1 / -1 !important;
+    margin-top: 6px !important;
+  }
+
+  /* garante que o botão preenche a largura toda */
+  #lp-4selet-aa3a79de3f40ab3f27ff
+  #rd-form-mk4gs8hd
+  #rd-button-mk4gs8hg {
+    width: 100% !important;
+    max-width: none !important;
+  }
+}
+
+/* =========================================================
+   SELECTS RD — placeholder e setinha (caret) alinhados
+   Cor placeholder: rgba(244,244,244,0.55)
+   Caret branco + afastado do canto
+   ========================================================= */
+
+/* 1) Placeholder (primeira option) no SELECT:
+   - usamos :invalid porque o select é required e value="" é inválido
+   - força a cor igual aos outros placeholders
+*/
+#lp-4selet-aa3a79de3f40ab3f27ff
+#rd-form-mk4gs8hd
+select.bricks-form__input:required:invalid {
+  color: rgba(244, 244, 244, 0.55) !important;
+}
+
+/* quando já selecionou algo (não vazio), volta a cor "normal" do texto */
+#lp-4selet-aa3a79de3f40ab3f27ff
+#rd-form-mk4gs8hd
+select.bricks-form__input:required:valid {
+  color: #ffffff !important; /* ajuste aqui se você usa preto no texto do select */
+}
+
+/* 2) Tirar a setinha padrão e criar uma nossa (branca, com padding certo) */
+#lp-4selet-aa3a79de3f40ab3f27ff
+#rd-form-mk4gs8hd
+select.bricks-form__input {
+  -webkit-appearance: none !important;
+  -moz-appearance: none !important;
+  appearance: none !important;
+
+  /* espaço pro caret */
+  padding-right: 3rem !important;
+
+  /* caret branco (SVG) */
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24'%3E%3Cpath fill='%23FFFFFF' d='M7 10l5 5 5-5z'/%3E%3C/svg%3E") !important;
+  background-repeat: no-repeat !important;
+  background-size: 20px 20px !important;
+
+  /* posição: puxa pra esquerda e centraliza vertical */
+  background-position: right 1.1rem center !important;
+
+  /* mantém seu fundo (se você já definiu antes) */
+  background-color: rgba(0,0,0,0.25) !important; /* se você usa fundo escuro no select */
+}
+
+/* 3) No mobile, garante que continua branco e com espaçamento bom */
+@media (max-width: 767px) {
+  #lp-4selet-aa3a79de3f40ab3f27ff
+  #rd-form-mk4gs8hd
+  select.bricks-form__input {
+    background-size: 22px 22px !important;
+    background-position: right 1rem center !important;
+    padding-right: 3.1rem !important;
+  }
+}
+
+/* 4) (Opcional) cor das opções no dropdown (quando abre):
+   aqui depende do navegador, mas ajuda em alguns */
+#lp-4selet-aa3a79de3f40ab3f27ff
+#rd-form-mk4gs8hd
+select.bricks-form__input option {
+  color: #000000 !important;
+}
+
