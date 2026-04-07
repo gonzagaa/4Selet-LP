@@ -239,7 +239,13 @@
   }
 
   header#home.obrigado .content .text {
-    width: 60%;
+    padding-inline: 20%;
+
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
   }
 
   header#home .content .text h3 {

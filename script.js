@@ -1,4 +1,47 @@
 
+document.addEventListener("DOMContentLoaded", () => {
+  const modal = document.getElementById("modalForm");
+  const openButtons = document.querySelectorAll(".abrir-form");
+  const closeButtons = document.querySelectorAll("[data-close-modal]");
+
+  let rdFormLoaded = false;
+
+  function loadRDForm() {
+    if (rdFormLoaded) return;
+    if (typeof RDStationForms !== "undefined") {
+      new RDStationForms("lp-4selet-aa3a79de3f40ab3f27ff", "null").createForm();
+      rdFormLoaded = true;
+    }
+  }
+
+  function openModal() {
+    modal.classList.add("active");
+    modal.setAttribute("aria-hidden", "false");
+    document.body.classList.add("modal-open");
+    loadRDForm();
+  }
+
+  function closeModal() {
+    modal.classList.remove("active");
+    modal.setAttribute("aria-hidden", "true");
+    document.body.classList.remove("modal-open");
+  }
+
+  openButtons.forEach((button) => {
+    button.addEventListener("click", openModal);
+  });
+
+  closeButtons.forEach((button) => {
+    button.addEventListener("click", closeModal);
+  });
+
+  document.addEventListener("keydown", (event) => {
+    if (event.key === "Escape" && modal.classList.contains("active")) {
+      closeModal();
+    }
+  });
+});
+
 const heads = document.querySelectorAll('.card .head');
 
   function closeCard(card) {
