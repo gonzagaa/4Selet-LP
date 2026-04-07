@@ -31,7 +31,7 @@
   justify-content: center;
   height: 100%;
 
-  padding-top: 100%;
+  padding-top: 15%;
 
 }
 #home .text {
@@ -130,7 +130,7 @@
 }
 
 #home a button {
-  margin-top: 1rem;
+  margin-top: 2rem;
 }
 
 #home.obrigado {
@@ -148,6 +148,28 @@
   margin-top: 3rem;
 }
 
+#home .video {
+  width: 100%;
+
+  border: 2px solid #41a5cd;
+  border-radius: 2rem;
+  
+  box-shadow:
+  0 0 0 1px rgba(65, 165, 205, 0.18),
+  0 18px 50px rgba(0, 0, 0, 0.45),
+  0 0 60px rgba(65, 165, 205, 0.22);
+}
+
+#home .video img,
+#home .video video {
+  width: 100%;
+  border-radius: 2rem;
+}
+
+#home button.desktop {
+  display: none;
+}
+
 @media (min-width: 1080px) {
   header#home {
     background: #000000;
@@ -163,6 +185,15 @@
 
     height: 90vh;
   }
+
+  header#home button.desktop {
+    display: inherit;
+  }
+
+  header#home button.mobile {
+    display: none;
+  }
+
 
   header#home.obrigado {
     padding-block: 0;
@@ -184,10 +215,6 @@
   }
 
   header#home .wrapper .content {
-    padding-top: 0;
-
-    display: grid;
-    grid-template-columns: 1fr 1fr;
   }
 
   header#home .content .text {
@@ -200,22 +227,30 @@
 
     position: relative;
     z-index: 2;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 5rem;
   }
 
   header#home .content h1 {
-    font-size: 4.2rem;
+    font-size: 4rem;
     line-height: .9;
   }
 
   header#home.obrigado .content .text {
     width: 60%;
   }
+
+  header#home .content .text h3 {
+    width: max-content;
+  }
 }
 
 @media (min-width: 1700px) {
 
   header#home .content h1 {
-    font-size: 5.4rem;
+    font-size: 5.2rem;
     line-height: .9;
     padding-bottom: .5rem;
   }

@@ -25,8 +25,8 @@
 </head>
 <body id="body" class="smooth-scroll-wrapper">
     <header class="header" id="home">
-        <img class="bg desktop" src="./assets/Frame 1 (21) (1).avif" alt="">
-        <img class="bg mobile" src="./assets/Frame 2.avif" alt="">
+        <img class="bg desktop" src="./assets/BG DESK.avif" alt="">
+        <img class="bg mobile" src="./assets/BG MOBILE.avif" alt="">
 
         <div class="blush um"></div>
         <div class="blush dois"></div>
@@ -34,9 +34,21 @@
         <div class="wrapper">
             <div class="content">
                 <div class="text">
-                    <h3>Para infoprodutores que querem escalar.</h3>
-                    <h1><span>Recupere de 5% a 12%</span> do seu caixa mensal otimizando o pagamento do seu negócio.</h1>
-                    <p>Menos reprovação, menos taxa e mais dinheiro disponível com a infraestrutura de pagamentos da 4Selet. <span>Devolvemos o dinheiro que você está perdendo sem perceber.</span></p>
+                    <div class="box">
+                      <h3>Para infoprodutores que querem escalar.</h3>
+                      <h1><span>Recupere de 5% a 12%</span> do seu caixa mensal otimizando o pagamento do seu negócio.</h1>
+                      <p>Menos reprovação, menos taxa e mais dinheiro disponível com a infraestrutura de pagamentos da 4Selet. <span>Devolvemos o dinheiro que você está perdendo sem perceber.</span></p>
+                      <a href="#"><button class="button desktop">Quero aumentar meu caixa</button></a>
+                    </div>
+
+                    <div class="video" id="videoContainer">
+  <img class="capa" src="./assets/capa video.avif" alt="Capa do vídeo">
+
+  <video id="meuVideo" width="100%" controls playsinline style="display: none;">
+    <source src="./assets/vsl.mp4" type="video/mp4">
+    Seu navegador não suporta vídeo em HTML.
+  </video>
+</div>
                     
                     <!-- <div class="topics">
                       <div class="topic">
@@ -47,7 +59,7 @@
                       </div>
                     </div> -->
 
-                    <a href="#"><button class="button">Quero aumentar meu caixa</button></a>
+                    <a href="#"><button class="button mobile">Quero aumentar meu caixa</button></a>
                 </div>
             </div>
         </div>
@@ -418,6 +430,20 @@
             </div>
         </div>
     </section>
+
+    <script>
+  const videoContainer = document.getElementById("videoContainer");
+  const capa = videoContainer.querySelector(".capa");
+  const video = document.getElementById("meuVideo");
+
+  videoContainer.addEventListener("click", function () {
+    if (video.style.display === "none") {
+      capa.style.display = "none";
+      video.style.display = "block";
+      video.play();
+    }
+  });
+</script>
 
     <!-- PORTAL DE ENTRADA -->
     <div class="portal-overlay" id="portal-overlay">
